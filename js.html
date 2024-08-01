@@ -1,0 +1,101 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="js.css">
+</head>
+<body>
+    <h1>guess the number</h1>
+    <input id="guess">
+    <button onclick="check()">check</button>
+    <p id="result">you are win/lose</p>
+    <p id="score">score=10</p>
+
+    
+<script>
+    var guess = document.getElementById("guess")
+    var result = document.getElementById("result")
+    var score = document.getElementById("score")
+    var randomNumber = Math.floor(Math.random()*10)+1
+    var total=10
+    function check()
+    {
+        var enteredNumber = guess.value
+        if (randomNumber==enteredNumber)
+        {
+            console.log("right")
+            result.textContent="right"
+            alert("you win....")
+        }
+        else{
+            total=total-1
+            score.textContent="score="+total
+            result.textContent="wrong"
+        }
+    }
+</script>
+
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="js.css">
+    <style>
+        /* Styles for tablets (landscape and portrait) */
+        @media only screen and (max-width: 1024px) {
+            /* Adjust the layout and styling here */
+            body {
+                font-size: 18px; /* Example: Increase font size for better readability */
+            }
+        }
+
+        /* Styles for mobile devices (landscape and portrait) */
+        @media only screen and (max-width: 600px) {
+            /* Adjust the layout and styling here */
+            body {
+                font-size: 16px; /* Example: Further increase font size for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>guess the number</h1>
+    <input id="guess">
+    <button onclick="check()">check</button>
+    <p id="result">you are win/lose</p>
+    <p id="score">score=10</p>
+
+    
+<script>
+    var guess = document.getElementById("guess")
+    var result = document.getElementById("result")
+    var score = document.getElementById("score")
+    var randomNumber = Math.floor(Math.random()*10)+1
+    var total=10
+    function check()
+    {
+        var enteredNumber = guess.value
+        if (randomNumber==enteredNumber)
+        {
+            console.log("right")
+            result.textContent="right"
+            alert("you win....")
+        }
+        else{
+            total=total-1
+            score.textContent="score="+total
+            result.textContent="wrong"
+        }
+    }
+</script>
+
+
+</body>
+</html>
